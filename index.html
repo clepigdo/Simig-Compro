@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIMIG - Sistem Informasi Manajemen Inventaris Gudang Rosok</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">Sistem SIMIG</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Tentang Kami</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#categories">Kategori</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Kontak Kami</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://simig-webapps-production.up.railway.app/">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('asset/bg_home.jpg');">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-9 col-md-12">
+                    <div class="hero-content">
+                        <h5 class="mb-3">MENGUBAH ROSOK MENJADI ENERGI BERNILAI</h5>
+                        
+                        <h1 class="text-white mb-4">Pemanfaatan Limbah Plastik Sulit Terurai untuk Didaur Ulang dan Bernilai Guna</h1>
+                        
+                        <p class="text-white-50 mb-5" style="font-size: 1.1rem; max-width: 800px;">
+                            Kami bergerak di bidang pengolahan rosok dan limbah industri menjadi produk energi dan material bernilai guna, mendukung ekonomi sirkular dan pengurangan limbah.
+                        </p>
+                        
+                        <div class="d-flex flex-wrap gap-3">
+                            <a href="#categories" class="btn btn-custom-primary">Lihat Produk</a>
+                            <a href="#contact" class="btn btn-custom-outline">Hubungi Kami</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="full-screen-section bg-white">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Tentang Perusahaan Kami</h2>
+                <p class="mx-auto" style="max-width: 700px;">
+                    Kami menyediakan solusi pengelolaan limbah terpadu untuk membantu mewujudkan lingkungan yang lebih bersih dan berkelanjutan bagi generasi mendatang.
+                </p>
+            </div>
+            
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="about-img-container">
+                        <img src="asset/about.jpg" alt="Gudang SIMIG">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="ps-lg-5">
+                        <h3 class="mb-3" style="color: #222;">Mengurangi limbah, memaksimalkan nilai, dan menciptakan energi dari sisa yang terabaikan.</h3>
+                        <p class="text-muted mb-4">
+                            SIMIG adalah perusahaan pengelola rosok dan limbah yang berfokus pada pemanfaatan ulang material menjadi produk bernilai ekonomi. Melalui pengelolaan yang efisien dan sistem inventaris yang modern, kami memastikan setiap limbah ditangani dengan tepat, aman, dan ramah lingkungan.
+                        </p>
+                        <a href="#contact" class="text-primary fw-bold text-decoration-none">
+                            Hubungi Tim Kami <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="categories" class="section-padding text-white">
+        <div class="container">
+            <div class="section-header">
+                <h2 style="color: #fff;">Kategori Produk</h2>
+                <p style="color: rgba(255,255,255,0.8);">Berbagai jenis limbah yang kami kelola dan daur ulang menjadi bahan baku industri yang siap pakai.</p>
+            </div>
+
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="image-wrapper">
+                        <img src="asset/plastik.jpg" alt="Rosok Plastik">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="ps-lg-4">
+                        <h3>Rosok Plastik</h3>
+                        <p class="text-white-50">Menerima berbagai jenis limbah plastik seperti botol PET, gelas PP, plastik kemasan, dan jenis polimer lainnya. Limbah ini akan disortir, dicacah, dan diolah menjadi bijih plastik siap pakai untuk industri manufaktur.</p>
+                        <a href="kategori_plastik.html" class="text-blue text-decoration-underline">Lihat Selengkapnya <i class="fas fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+                    <div class="image-wrapper">
+                        <img src="asset/logam.png" alt="Rosok Logam">
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="pe-lg-4 text-lg-end text-start">
+                        <h3>Rosok Logam</h3>
+                        <p class="text-white-50">Kami menampung limbah logam ferrous dan non-ferrous seperti besi, tembaga, aluminium, dan kuningan. Logam-logam ini diproses untuk dilebur kembali menjadi bahan baku industri logam yang krusial.</p>
+                        <a href="kategori_logam.html" class="text-blue text-decoration-underline">Lihat Selengkapnya <i class="fas fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="image-wrapper">
+                        <img src="asset/kertas.jpg" alt="Rosok Kertas">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="ps-lg-4">
+                        <h3>Rosok Kertas</h3>
+                        <p class="text-white-50">Menerima limbah kertas seperti kardus bekas (OCC), kertas arsip, koran, dan majalah. Kertas yang terkumpul akan dipadatkan dan dikirim ke pabrik kertas untuk didaur ulang menjadi produk kertas baru.</p>
+                        <a href="kategori_kertas.html" class="text-blue text-decoration-underline">Lihat Selengkapnya <i class="fas fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-us" class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Mengapa Memilih Kami?</h2>
+                <p>Kami berkomitmen memberikan layanan pengelolaan limbah terbaik dengan mengutamakan transparansi, efisiensi, dan dampak positif bagi lingkungan.</p>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="image-wrapper">
+                        <img src="asset/keunggulan.jpg" alt="Proses Muat SIMIG">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="ps-lg-4">
+                        <div class="d-flex mb-4">
+                            <div class="feature-icon me-3">
+                                <i class="fas fa-recycle"></i>
+                            </div>
+                            <div>
+                                <h4>Berbasis Daur Ulang</h4>
+                                <p class="mb-0">Fokus utama kami adalah memastikan limbah diolah kembali menjadi sumber daya baru, bukan berakhir di TPA.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <div class="feature-icon me-3">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <div>
+                                <h4>Proses Terkontrol</h4>
+                                <p class="mb-0">Pengelolaan didukung oleh sistem manajemen inventaris yang rapi dan transparan.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <div class="feature-icon me-3">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <div>
+                                <h4>Ramah Lingkungan</h4>
+                                <p class="mb-0">Menjalankan operasional yang meminimalkan dampak negatif terhadap lingkungan sekitar.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="feature-icon me-3">
+                                <i class="fas fa-hand-holding-usd"></i>
+                            </div>
+                            <div>
+                                <h4>Bernilai Ekonomi</h4>
+                                <p class="mb-0">Mengubah limbah menjadi komoditas yang memiliki nilai jual tinggi di pasar industri.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Kontak Kami</h2>
+                <p>Hubungi kami untuk informasi lebih lanjut mengenai layanan, kerjasama, atau penjemputan limbah.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="map-container h-100">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253451.96933980248!2d110.17453919453123!3d-6.987238499999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708df205aff701%3A0x84df6a24662f7cf9!2sRosok%20kozen!5e0!3m2!1sen!2sid!4v1766926849667!5m2!1sen!2sid" width="100%" height="100%" style="border:0; min-height: 400px; border-radius: 15px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="ps-lg-4">
+                        <div class="mb-4">
+                            <p>Punya pertanyaan tentang produk, harga, atau pengiriman? Tim kami siap membantu Anda.</p>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <i class="fas fa-phone-alt fa-2x text-primary me-3"></i>
+                            <div>
+                                <h4>Telepon / WhatsApp</h4>
+                                <p>+62 812-3456-7890</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <i class="fas fa-envelope fa-2x text-primary me-3"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>info@simig-rosok.com</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <i class="fas fa-map-location-dot fa-2x text-primary me-3"></i>
+                            <div>
+                                <h4>Alamat Gudang</h4>
+                                <p>RT. 03 RW. 01, Bangetayu Wetan, Genuk, Semarang City, Central Java</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4 text-center text-md-start">
+                    <h5 class="fw-bold mb-3 text-uppercase">Perusahaan</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#about" class="text-secondary text-decoration-none">Tentang Kami</a></li>
+                        <li class="mb-2"><a href="#contact" class="text-secondary text-decoration-none">Kontak Kami</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-6 col-md-6 mb-4 text-center">
+                    <h5 class="fw-bold mb-3 text-uppercase">SIMIG</h5>
+                    <p class="small text-muted">Rosok Hari Ini, Energi untuk Masa Depan yang Berkelanjutan melalui Pengelolaan Limbah Terpilih dan Pemanfaatan Kembali Material Bernilai.</p>
+                </div>
+                
+                <div class="col-lg-3 col-md-12 mb-4 text-center text-md-end">
+                    <h5 class="fw-bold mb-3 text-uppercase">Kategori</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#categories" class="text-secondary text-decoration-none">Plastik</a></li>
+                        <li class="mb-2"><a href="#categories" class="text-secondary text-decoration-none">Logam</a></li>
+                        <li class="mb-2"><a href="#categories" class="text-secondary text-decoration-none">Kertas</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center mt-4">
+                <div class="mb-2 mb-md-0">
+                    © 2025 Sistem SIMIG, Pengolahan Rosok & Energi Alternatif
+                </div>
+                <div>
+                    Syarat & Ketentuan · Kebijakan Privasi
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="chat-widget">
+        <button id="chat-toggle-btn" class="chat-toggle-btn">
+            <i class="fas fa-comments"></i>
+        </button>
+
+        <div class="chat-box" id="chat-box">
+            <div class="chat-header">
+                <div class="chat-title">
+                    <h4>Admin SIMIG</h4>
+                    <span class="status-dot"></span> Online
+                </div>
+                <button id="chat-close-btn"><i class="fas fa-times"></i></button>
+            </div>
+            
+            <div class="chat-body" id="chat-body">
+                <div class="message bot-message">
+                    <p>Halo! Selamat datang di SIMIG. Ada yang bisa saya bantu seputar rosok?</p>
+                </div>
+                <div class="quick-options">
+                    <button onclick="sendQuickMessage('Lokasi dimana?')">📍 Lokasi</button>
+                    <button onclick="sendQuickMessage('Terima jenis apa?')">♻️ Jenis Rosok</button>
+                    <button onclick="sendQuickMessage('Jam operasional?')">🕒 Jam Buka</button>
+                    <button onclick="sendQuickMessage('Hubungi via WA')">📞 WhatsApp</button>
+                </div>
+            </div>
+
+            <div class="chat-footer">
+                <input type="text" id="chat-input" placeholder="Tulis pesan...">
+                <button id="chat-send-btn"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
