@@ -1,8 +1,10 @@
-# Gunakan Nginx sebagai base image (ringan dan cepat)
+# Gunakan Nginx sebagai base image
 FROM nginx:alpine
 
-# Salin semua file dari folder project ke folder default Nginx di server
+# Salin semua file dari folder project ke folder default Nginx
 COPY . /usr/share/nginx/html
 
-# Expose port 80 agar bisa diakses internet
-EXPOSE 80
+# --- BAGIAN PENTING ---
+# Kita gunakan script 'sed' untuk mengedit konfigurasi Nginx saat container dijalankan.
+# Ini akan mengubah "listen 80;" menjadi "listen [PORT_RAILWAY];" secara otomatis.
+CMD /bin/sh -c "sed -i 's/listen  *80;/listen '$PORT';/g' /etc/nginx/conf.d/default.conf && nginx -g 'daemon off;'"
